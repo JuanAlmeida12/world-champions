@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  world-champions:
+    container_name: world_champ
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - PORT=8080
